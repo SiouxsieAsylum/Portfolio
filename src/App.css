@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+}
+
+.container{
+  height:100vh;
+  flex: 1;
+}
+
+#info{
+  background-color: blue;
+}
+
+#thumbnail{
+    background-color: red;
+}
+
+.button{
+  height:3vh;
+  width:3vh;
+  background-color: green
+}
+
+.button-container{
+  display:flex;
+  width: 10vw;
+  justify-content: space-between;
+}
+
+ #phone-number, #skype{
+  display: flex;
+  margin-top:1vh;
+ }
+
+.name-and-contacts{
+  margin-top: 2vh;
+  margin-left: 2vh;
+}
+
+.flex-background{
+  width: 50vw;
+  height:40vh;
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  margin-bottom: 1vh;
+}
+
+h6{
+  margin-left: 2vh;
+}
+
+.description{
+  margin-top: 10vh;
+  height:60vh;
+  width:40vw;
+  background-color: rgba(255,255,255,0.3);
+  border-radius:5vw;
+  padding:5vw;
+}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
