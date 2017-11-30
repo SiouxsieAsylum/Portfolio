@@ -17,7 +17,14 @@ class InfoContainer extends Component {
             <div id="skype"><div className="button" id="Skype-icon"></div><h6>andrea-michelle-mckenzie</h6></div>
           </div>
           <div className="flex-background">
-            <Description />
+            <Description
+             selected={this.props.selected}
+             titles={this.props.titles}
+             images={this.props.images}
+             techs={this.props.techs}
+             descs={this.props.descs}
+             repos={this.props.repos}
+            />
           </div>
         </div>
       </div>
