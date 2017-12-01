@@ -13,12 +13,18 @@
   /*flex: 1;*/
 }
 
-#info{
-  background-color: grey;
+.info-image{
   background-image: url(/images/my-photo-copy.jpeg);
   background-size: 100%;
-  background-position: 0% 40%;
+  background-position: 0% 30%;
 }
+
+#info{
+  background-color: grey;
+  background: linear-gradient(to right, rgba(255,255,255,0.9),rgba(255,255,255,0.0) );
+}
+
+
 
 #thumbnail{
   background-color: rgb(229, 229, 229);
@@ -26,14 +32,15 @@
 }
 
 .button{
-  height:3vh;
-  width:3vh;
-  background-color: green
+  height:5vh;
+  width:5vh;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .button-container{
   display:flex;
-  width: 10vw;
+  width: 13vw;
   justify-content: space-between;
 }
 
@@ -42,40 +49,84 @@
   margin-top:1vh;
  }
 
+ #Phone{
+  background-image:url(/images/phone.png);
+ }
+
+ #Skype-icon{
+  background-image:url(/images/skype.png);
+  background-position: 50% 0%;
+  /*background-size: 5%*/
+ }
+
+ #GitHub{
+  background-image:url(/images/mark-github.png);
+ }
+
+ #LinkedIn{
+  background-image:url(/images/linkedin.png);
+  background-size: 110%;
+  background-position: 0% 50%;
+ }
+
+ #Gmail{
+  background-image:url(/images/gmail.png);
+  background-size: 90%;
+  background-position: 0% 50%;
+ }
+
 .name-and-contacts{
-  margin-top: 2vh;
-  margin-left: 2vh;
+  height: 30vh;
+  padding-top: 2vh;
+  padding-left: 2vh;
+
 }
 
 .flex-background{
   width: 50vw;
   height:40vh;
-  display: flex;
-  justify-content: center;
 }
 
 h1,h2{
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
+}
+
+h1,h2,h6{
+  font-family: 'Lobster', cursive;
+}
+p,button{
+  font-family: 'Philosopher', sans-serif;
+}
+
+h1{
+  font-size: 8vh;
+  /*text-align: center;*/
+}
+
+h2{
+  font-size: 4vh;
 }
 
 
 h6{
-  /*font-size:*/
+  font-size: 3vh;
   margin-left: 2vh;
 }
 
 .description{
-  margin-top: 10vh;
+  margin-top: 5vh;
   height:60vh;
-  width:40vw;
-  background-color: rgba(255,255,255,0.7);
-  border-radius:2vw;
-  padding:5vw;
+  width:30vw;
+  padding:2vw;
   white-space: pre-wrap;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-left:2px solid rgb(72, 0, 49);
+}
+
+.description:hover{
+  border-left:2px solid rgb(124, 0, 85);
 }
 
 .image{
@@ -86,14 +137,28 @@ h6{
 }
 
 .desc-button-container{
-  background-color: yellow;
-  position: relative;
-  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  /*margin-bottom: vh;*/
+}
+
+button{
+  height:5vw;
+  width: 8vw;
+  background-color: rgba(255,255,255,0.0);
+  border:6px solid black;
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+button:hover{
+  background-color: rgba(255,255,255,0.3);
+  border:6px solid rgb(73, 74, 76);
 }
 
 .tech{
   margin-top: 1vh;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .thumbnail-inner{

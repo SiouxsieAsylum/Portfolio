@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import InfoContainer from './components/info-container'
 import ThumbnailContainer from './components/thumbnail-container'
 // import logo from './logo.svg';
-import './App.css';
 import './reset.css';
+import './App.css';
+
 
 class App extends Component {
   constructor(props){
