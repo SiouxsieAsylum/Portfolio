@@ -28,7 +28,10 @@
 
 #thumbnail{
   background-color: rgb(229, 229, 229);
-  border-left: 2px solid rgb(72, 0, 49);
+}
+
+#thumbnail:hover{
+   /*border-left: 2px solid rgb(72, 0, 49);*/
 }
 
 .button{
@@ -92,14 +95,15 @@ h1,h2{
 }
 
 h1,h2,h6{
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 p,button{
-  font-family: 'Philosopher', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1{
-  font-size: 8vh;
+  font-size: 6vh;
+  font-weight: bold;
   /*text-align: center;*/
 }
 
@@ -111,6 +115,10 @@ h2{
 h6{
   font-size: 3vh;
   margin-left: 2vh;
+}
+
+#info h6{
+  font-size: 2vh;
 }
 
 .description{
