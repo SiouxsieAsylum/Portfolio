@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Link} from 'react-router-dom';
 class Nav extends Component{
   render(){
     return(
-      <Router>
+
         <div>
         <Link to="/">
           <h1>Home</h1>
@@ -20,7 +20,7 @@ class Nav extends Component{
           <h1>Come Find Me</h1>
         </Link>
         </div>
-      </Router>
+
       )
   }
 }
