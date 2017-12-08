@@ -4,8 +4,83 @@
   padding: 0;
 }
 
-.App {
+.nav{
+  width: 100vw;
+  position: absolute;
+  z-index: 9999;
   display: flex;
+  justify-content: flex-end;
+}
+
+.nav p{
+  height:3vh;
+  color:white;
+  margin-top:1vh;
+  margin-left: 3vw;
+  margin-right: 2vw;
+}
+
+.nav p:hover{
+  border-bottom: 2px solid white
+}
+
+#landing-bar,#overlay{
+  position: fixed;
+  top: 45vh;
+  height:33vh;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.4);
+}
+
+a{
+  text-decoration: none;
+}
+
+#overlay{
+  top: 44vh;
+  height:35vh;
+  background-color: rgba(255,255,255,0.3);
+}
+
+#link{
+  align-self: center;
+}
+
+#enter {
+  width:30vw;
+  font-size: 3vh;
+}
+
+
+#background{
+  height:100vh;
+  width:100vw;
+  background-image: url(/images/blake-connally-435076-copy.jpeg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+#landing-words{
+  font-size: 10vh;
+  position: absolute;
+  top: 30vh;
+  color:white;
+  /*align-self: center;*/
+}
+
+footer{
+  position: absolute;
+  z-index: 9999;
+  bottom:0;
+  color: white;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5vh;
 }
 
 .container{
