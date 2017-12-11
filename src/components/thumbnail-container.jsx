@@ -31,7 +31,7 @@ class ThumbnailContainer extends Component {
   render(){
 
       return(
-        <div className="container" id="thumbnail">
+        <div id="thumbnail">
         <ThumbNailGenerator
           titles={this.props.titles}
           images={this.props.images}

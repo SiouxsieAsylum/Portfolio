@@ -1,7 +1,117 @@
+#about{
+  background-color:rgb(30,30,30);
+  color: rgb(220,220,220);
+  /*letter-spacing: .5vh;*/
+}
+
+#about a{
+  color: rgb(210,210,210);
+}
+
+#about a:hover{
+  color: rgb(255,255,255);
+}
+
+.split-screen{
+  position:absolute;
+  top:45vh;
+}
+
+.content-body{
+  height:35vh;
+  overflow:hidden;
+}
+
+.layer{
+  width:100vw;
+  position: absolute;
+}
+
+.top{
+  width:50vw;
+  z-index: 1;
+}
+
 .bottom .content-body{
-  background-color:yellow;
+  background-color: rgb(81,81,81);
+  color:black;
 }
 
 .top .content-body{
-  background-color: red;
+  background-color: rgb(59,59,59);
+  color:white;
 }
+
+.content-flex{
+  display: flex;
+}
+
+.content{
+  width:20vw;
+  height:20vw;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content p, .icon{
+  align-self: center;
+}
+
+.icon{
+  height:13vw;
+  width:13vw;
+  border-radius:13vw;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.full-stack{
+  background-image:url(/images/logos/full-stack.png);
+}
+
+.api{
+  background-image:url(/images/logos/api.png);
+}
+
+.front-end{
+  background-image:url(/images/logos/html.png);
+}
+
+.bottom .front-end{
+  background-image:url(/images/logos/white-html.png);
+}
+
+.ux{
+  background-image:url(/images/logos/UX-Icon.png);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
+.react{
+  background-image:url(/images/logos/react.jpg);
+}
+
+.top .icon{
+  background-color: rgb(220,220,220);
+  background-color:
+}
+
+.bottom .icon{
+  background-color: rgb(34,34,34);
+}
+
+.my-intro{
+  position: absolute;
+  margin:10vh;
+  margin-top:20vh;
+  width:30vw;
+}
+
+.my-intro span{
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+
