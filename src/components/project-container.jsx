@@ -38,7 +38,7 @@ class ProjectContainer extends Component {
 
   render() {
     return (
-      <div className="project-container">
+      <div className="container" id="project-container">
         <InfoContainer
           selected={this.state.selected}
           titles={this.titles}

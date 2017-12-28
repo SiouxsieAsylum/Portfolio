@@ -28,8 +28,9 @@
   border-bottom: 2px solid white
 }
 
+
 #landing-bar,#overlay{
-  position: fixed;
+  position: absolute;
   top: 45vh;
   height:33vh;
   width:100vw;
@@ -88,16 +89,25 @@ footer{
 }
 
 .container{
+  position:relative;
   display: flex;
   flex-direction: column;
   align-content: center;
   height:100vh;
 }
 
+.thumbnail-collection{
+  position:relative;
+  display: flex;
+  justify-content: space-around;
+  height:20vh;
+  width: 100vw;
+}
+
 #thumbnail {
   height:16vh;
   width: 100vw;
-  position: fixed;
+  position: absolute;
   bottom:0;
 }
 
@@ -113,14 +123,6 @@ footer{
 #info{
   background-color: grey;
   background: linear-gradient(to right, rgba(255,255,255,0.9),rgba(255,255,255,0.0) );
-}
-
-
-
-
-
-#thumbnail:hover{
-   /*border-left: 2px solid rgb(72, 0, 49);*/
 }
 
 .button{
@@ -279,16 +281,6 @@ button:hover{
 
 .image,#info{
   background-repeat: no-repeat;
-}
-
-.thumbnail-collection{
-  position:relative;
-  display: flex;
-  justify-content: space-around;
-  height:20vh;
-  width: 100vw;
-  /*background-color: red;*/
-  /*padding:1.5vh;*/
 }
 
 @media screen and (max-width: 700px){
