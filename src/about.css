@@ -104,6 +104,8 @@ iframe{
   opacity: 0.3;
 }
 
+/*small orange borders. Description side should have a lavendar frame, box shadow around the slideshow, and an orange side border*/
+
 .flex-on-me{
   margin-top:10vh;
   width:100vw;
