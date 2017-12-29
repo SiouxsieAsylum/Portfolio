@@ -1,7 +1,6 @@
 #about{
-  background-color:rgb(30,30,30);
+  background-color:rgb(18,13,25);
   color: rgb(220,220,220);
-  /*letter-spacing: .5vh;*/
 }
 
 #about a{
@@ -33,12 +32,12 @@
 }
 
 .bottom .content-body{
-  background-color: rgb(81,81,81);
+  background-color: rgb(111,107,140);
   color:black;
 }
 
 .top .content-body{
-  background-color: rgb(59,59,59);
+  background-color: rgb(54,36,93);
   color:white;
 }
 
@@ -95,18 +94,26 @@
 
 .top .icon{
   background-color: rgb(220,220,220);
-  background-color:
 }
 
 .bottom .icon{
   background-color: rgb(34,34,34);
 }
 
+.flex-on-me{
+  margin-top:10vh;
+  width:100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
 .my-intro{
-  position: absolute;
-  margin:10vh;
-  margin-top:20vh;
+  /*position: absolute;*/
+  /*margin:10vh;*/
+
   width:30vw;
+  padding-left: 2vw;
+  border-left:2px solid rgb(220,220,220);
 }
 
 .my-intro span{

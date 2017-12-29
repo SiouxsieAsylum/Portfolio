@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class ContactMe extends Component{
   render(){
     return(
+      <div id="contact-me">
         <div className="name-and-contacts">
           <h1>Andrea McKenzie</h1>
           <div className="contacts">
@@ -15,6 +16,7 @@ class ContactMe extends Component{
             <div id="skype"><div className="button" id="Skype-icon"></div><h6>andrea-michelle-mckenzie</h6></div>
           </div>
         </div>
+      </div>
       )
   }
 }

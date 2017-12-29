@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 import Nav from './components/nav'
 import About from './components/about'
@@ -35,15 +36,15 @@ class App extends Component {
                   <h1 id="landing-words">Let's Make Magic.</h1>
                     <div id="overlay"></div>
                     <div id="landing-bar">
-                      <Link id="link" to="#about">
+                      <Link id="link" to="/#about">
                         <button id="enter">Meet Andrea McKenzie</button>
                       </Link>
                     </div>
                   </div>)
           }} />
-          <Route exact path="#about" component={About} />
-          <Route exact path="#projects" component={ProjectContainer} />
-          <Route exact path="#contact-me" component={ContactMe} />
+          <Route exact path="/#about" component={About} />
+          <Route exact path="/#projects" component={ProjectContainer} />
+          <Route exact path="/#contact-me" component={ContactMe} />
           <About />
           <ProjectContainer />
           <ContactMe />

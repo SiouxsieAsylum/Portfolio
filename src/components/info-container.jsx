@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Skills from './skills';
 import Description from './description';
 
 class InfoContainer extends Component {
@@ -7,13 +8,18 @@ class InfoContainer extends Component {
     <div className="info-image">
       <div className="container" id="info">
           <div className="flex-background">
-            <Description
+        {/*do something with description and contact-me page*/}
+            <Skills
              selected={this.props.selected}
              titles={this.props.titles}
              images={this.props.images}
              techs={this.props.techs}
-             descs={this.props.descs}
              repos={this.props.repos}
+             lives={this.props.lives}
+            />
+            <Description
+             selected={this.props.selected}
+             descs={this.props.descs}
             />
           </div>
         </div>

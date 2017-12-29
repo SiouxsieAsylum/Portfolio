@@ -5,7 +5,7 @@
 }
 
 .App, .container{
-  background-color:rgb(30,30,30);
+  background-color:rgb(12,20,39);
 }
 
 .nav{
@@ -78,7 +78,7 @@ a{
 }
 
 footer{
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   bottom:0;
   color: white;
@@ -111,8 +111,6 @@ footer{
   bottom:0;
 }
 
-
-
 /*project*/
 .info-image{
   /*background-image: url(/images/my-photo-copy.jpeg);*/
@@ -121,9 +119,10 @@ footer{
 }
 
 #info{
-  background-color: grey;
-  background: linear-gradient(to right, rgba(255,255,255,0.9),rgba(255,255,255,0.0) );
+  background-color: white;
 }
+
+
 
 .button{
   height:5vh;
@@ -177,8 +176,28 @@ footer{
 }
 
 .flex-background{
-  width: 50vw;
+  margin-top: 5vh;
+  margin: 2vw;
+  width: 80vw;
   height:40vh;
+  display: flex;
+}
+
+.skill-set,.description{
+  height: inherit;
+  width:30vw;
+  margin: 10vh 10vw 0 10vw;
+}
+
+.skill-set{
+  height:40vh;
+  width:30vw;
+  padding:2vw;
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left:2px solid rgb(72, 0, 49);
 }
 
 h1,h2{
@@ -212,30 +231,18 @@ h6{
   font-size: 2vh;
 }
 
-.description{
-  margin-top: 5vh;
-  height:40vh;
-  width:30vw;
-  padding:2vw;
-  white-space: pre-wrap;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-left:2px solid rgb(72, 0, 49);
-}
-
-.description:hover{
+.skill-set:hover{
   border-left:2px solid rgb(124, 0, 85);
 }
 
 .image{
   height:9vw;
-  width:calc(100vw/6);
+  width:calc(100vw/7);
   /*margin: 1vh;*/
   background-size: cover;
 }
 
-.desc-button-container{
+.skill-button-container{
   display: flex;
   justify-content: space-around;
   /*margin-bottom: vh;*/
