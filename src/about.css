@@ -100,6 +100,10 @@
   background-color: rgb(34,34,34);
 }
 
+iframe{
+  opacity: 0.3;
+}
+
 .flex-on-me{
   margin-top:10vh;
   width:100vw;
