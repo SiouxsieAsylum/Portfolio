@@ -8,7 +8,10 @@ class Description extends Component{
   render(){
     return(
       <div className="description">
-        <p>{this.props.descs[this.props.selected]}</p>
+        <div className="desc-picture">
+          <p>{this.props.descs[this.props.selected]}</p>
+        </div>
+
       </div>
       )
   }

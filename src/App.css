@@ -176,17 +176,19 @@ footer{
 }
 
 .flex-background{
+  align-self: center;
   margin-top: 5vh;
   margin: 2vw;
-  width: 80vw;
+  width: 100vw;
   height:40vh;
-  display: flex;
+  display:flex;
+  justify-content: space-around;
 }
 
 .skill-set,.description{
   height: inherit;
-  width:30vw;
-  margin: 10vh 10vw 0 10vw;
+  width:40vw;
+  margin-top:10vh;
 }
 
 .skill-set{
@@ -198,6 +200,27 @@ footer{
   flex-direction: column;
   justify-content: space-between;
   border-left:2px solid rgb(72, 0, 49);
+}
+
+.description{
+  background-color: rgb(111,107,140);
+}
+
+.desc-picture{
+  height: 30vh;
+  width: 30vw;
+  margin:4vh 5vw 5vh 4vw;
+  box-shadow: 3vh 3vh 1vh rgba(9,19,25,0.5);
+  border-left:6px solid rgb(124,62,23);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.desc-picture p {
+  width: 25vw;
+  align-self: center;
 }
 
 h1,h2{
@@ -231,9 +254,7 @@ h6{
   font-size: 2vh;
 }
 
-.skill-set:hover{
-  border-left:2px solid rgb(124, 0, 85);
-}
+
 
 .image{
   height:9vw;
@@ -288,6 +309,10 @@ button:hover{
 
 .image,#info{
   background-repeat: no-repeat;
+}
+
+.my-intro:hover,.skill-set:hover{
+  border-left:2px solid rgb(124,62,23)
 }
 
 @media screen and (max-width: 700px){
