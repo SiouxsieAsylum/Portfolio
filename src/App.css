@@ -88,6 +88,36 @@ footer{
   font-size: 1.5vh;
 }
 
+.social-media{
+  height:5vh;
+  width:5vh;
+  /*position: absolute;*/
+  background-color: green;
+  margin: 1vh;
+  transition:1s;
+}
+
+.hovered{
+  background-color: red;
+  width:12vw;
+}
+
+.exposed{
+  display: block;
+}
+
+.list{
+  height:1vw;
+  width:10vw;
+  background-color: red;
+  margin:1vh;
+  display: none;
+}
+
+#phone{
+  margin-top: 6vh;
+}
+
 .container{
   position:relative;
   display: flex;
@@ -137,7 +167,7 @@ footer{
   justify-content: space-between;
 }
 
- #phone-number, #skype{
+ #phone-number, #skype-button{
   display: flex;
   margin-top:1vh;
  }

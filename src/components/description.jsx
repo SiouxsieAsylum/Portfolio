@@ -11,7 +11,6 @@ class Description extends Component{
         <div className="desc-picture">
           <p>{this.props.descs[this.props.selected]}</p>
         </div>
-
       </div>
       )
   }

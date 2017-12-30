@@ -13,7 +13,7 @@ class ContactMe extends Component{
             <a href="mailto:mckenzie.andrea.m@gmail.com"><div className="button" id="Gmail"></div></a>
           </div>
             <div id="phone-number"><div className="button" id="Phone"></div><h6>917-674-6154</h6></div>
-            <div id="skype"><div className="button" id="Skype-icon"></div><h6>andrea-michelle-mckenzie</h6></div>
+            <div id="skype-button"><div className="button" id="Skype-icon"></div><h6>andrea-michelle-mckenzie</h6></div>
           </div>
         </div>
       </div>
