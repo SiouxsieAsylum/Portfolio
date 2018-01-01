@@ -9,6 +9,7 @@
 }
 
 .nav{
+  margin-top: 1vh;
   width: 100vw;
   position: absolute;
   z-index: 9999;
@@ -89,33 +90,82 @@ footer{
 }
 
 .social-media{
+  /*margin: 1vh;*/
+  display: flex;
+  flex-direction: row-reverse;
+  transition: width 1s;
+  /*animation: switchMedia 10s infinite;*/
+}
+
+#picture{
   height:5vh;
   width:5vh;
-  /*position: absolute;*/
-  background-color: green;
-  margin: 1vh;
+  background-image: url(/images/my-photo-copy.jpeg);
+  background-position: 50% 23%;
+  background-size: 350%;
+  border-radius: 5vw;
+}
+
+.hidden{
+  display: none
+}
+
+/*/////////////nav////////////*/
+
+.hovered{
+  /*width:25vw;*/
+  display: block;
   transition:1s;
 }
 
-.hovered{
-  background-color: red;
-  width:12vw;
+.list{
+  /*font-size: 0;*/
+  opacity: 0;
+  width:0;
 }
 
 .exposed{
-  display: block;
-}
-
-.list{
-  height:1vw;
-  width:10vw;
-  background-color: red;
+  /*height:1vh;*/
+  opacity:1;
+  width:25vw;
   margin:1vh;
-  display: none;
+  transition: 1s;
+  font-size: 1.5vw;
+  color: white;
+  display: flex;
+  transition: 1s;
 }
 
-#phone{
-  margin-top: 6vh;
+.exposed:hover{
+  border-left:2px solid rgb(124,62,23);
+}
+
+.drop-icon{
+  height:3vw;
+  width:3vw;
+  background-image: url(/images/collection-social-light.png);
+  background-size:1000%;
+}
+
+#phone-icon{
+  background-position: 59% 44%;
+}
+
+#skype-icon{
+  background-position: 70% 0%;
+}
+
+#git-icon{
+  background-position: 0% 60%;
+  /*padding-left: 1vw;*/
+}
+
+#linked-icon{
+  background-position: 0% 15%;
+}
+
+#gmail-icon{
+  background-position: 70% 90%;
 }
 
 .container{
@@ -151,8 +201,6 @@ footer{
 #info{
   background-color: white;
 }
-
-
 
 .button{
   height:5vh;
@@ -260,7 +308,7 @@ h1,h2{
 h1,h2,h6{
   font-family: 'Comfortaa', cursive;
 }
-p,button{
+p,button,li{
   font-family: 'Ubuntu', sans-serif;
 }
 

@@ -8,7 +8,8 @@ class Nav extends Component{
 
     this.state={
       hovered:'',
-      exposed:''
+      exposed:'',
+      hidden:''
     }
     this.hoverExpose = this.hoverExpose.bind(this)
     this.noHoverExpose = this.noHoverExpose.bind(this)
@@ -23,14 +24,16 @@ class Nav extends Component{
     // this.socialList.className = "hovered"
     this.setState({
       hovered:'hovered',
-      exposed:'exposed'
+      exposed:'exposed',
+      hidden:'hidden'
     })
   }
 
     noHoverExpose = (e) => {
     this.setState({
       hovered:'',
-      exposed:''
+      exposed:'',
+      hidden:''
     })
   }
 
@@ -47,23 +50,41 @@ class Nav extends Component{
         <Link to="#about">
           <p>Get To Know Me</p>
         </Link>
-        {/*<Link to="#contact-me">
-          <p>Come Find Me</p>
-        </Link>*/}
+        {/*<Link to="#contact-me">*/}
+
+        {/*</Link>*/}
+        {/*<div id="">*/}
         <ul
-          className={['social-media',this.state.hovered].join(' ')}
+          className={this.state.hovered? ['social-media',this.state.hovered].join(' ') : 'social-media' }
           ref={socialList => this.socialList = socialList}
 
           onMouseEnter={e => this.hoverExpose(e)}
-          onMouseLeave={e => this.noHoverExpose(e)}
-          >
-         {/* <li className={["list", this.state.exposed ? 'exposed' : ""].join(' ')} id="phone">1</li>
-          <li className={["list", this.state.exposed ? 'exposed' : ""].join(' ')} id="skype">2</li>
-          <li className={["list", this.state.exposed ? 'exposed' : ""].join(' ')} id="github">3</li>
-          <li className={["list", this.state.exposed ? 'exposed' : ""].join(' ')} id="linkedin">4</li>
-          <li className={["list", this.state.exposed ? 'exposed' : ""].join(' ')} id="gmail">5</li>*/}
-        </ul>
+          onMouseLeave={e => this.noHoverExpose(e)}>
+          <div className={this.state.hidden ? this.state.hidden : ''} id="picture"></div>
+          <p className={this.state.hidden ? this.state.hidden : ''}>Come Find Me</p>
+          <li className={this.state.exposed ? 'list exposed' : 'list'} id="phone">
+            <div className="drop-icon" id="phone-icon"></div>
+            <a href="" target="_blank">917 674 6154</a>
+          </li>
 
+          <li className={this.state.exposed ? 'list exposed' : 'list'} id="skype">
+            <div className="drop-icon" id="skype-icon"></div>
+            <a href="" target="_blank">andrea-michelle-mckenzie</a>
+          </li>
+          <li className={this.state.exposed ? 'list exposed' : 'list'} id="github"><div className="drop-icon" id="git-icon"></div>
+            <a href="" target="_blank">SiouxsieAsylum</a>
+            </li>
+          <li className={this.state.exposed ? 'list exposed' : 'list'} id="linkedin">
+            <div className="drop-icon" id="linked-icon"></div>
+            <a href="" target="_blank">in/andrea-mckenzie</a>
+          </li>
+          <li className={this.state.exposed ? 'list exposed' : 'list'} id="gmail">
+            <div className="drop-icon" id="gmail-icon"></div>
+            <a href="" target="_blank">mckenzie.andrea.m@gmail.com</a>
+          </li>
+        </ul>
+        <p>{/*Come Find Me*/}</p>
+        {/*</div>*/}
         </div>
 
       )
