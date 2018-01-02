@@ -106,16 +106,10 @@
   padding-top: 25px;
   height: 0;
 }
-.videoWrapper iframe {
-
-}
 
 #youtube-vid{
   opacity: 0.3;
   transition: .5s;
-    /*position: absolute;*/
-/*  top: 0;
-  left: 0;*/
   width: 100%;
   height: 100%;
 }
@@ -123,8 +117,6 @@
 #youtube-vid:hover{
   opacity:1;
 }
-
-/*small orange borders. Description side should have a lavendar frame, box shadow around the slideshow, and an orange side border*/
 
 .flex-on-me{
   margin-top:10vh;
@@ -162,6 +154,24 @@
 
 .content p{
    text-align: center;
+}
+
+.flex-on-me{
+  flex-direction: column;
+  width: 100vw;
+}
+
+.youtube, .my-intro{
+  align-self: center;
+}
+
+.my-intro {
+  width: 80vw;
+  margin-bottom: 4vh;
+}
+
+#youtube-vid{
+  /*width:80%;*/
 }
 
 

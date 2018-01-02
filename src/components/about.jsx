@@ -92,13 +92,13 @@ class About extends Component{
     this.state = {
       video: "lnY4dYpDqUg"
     }
+
     this.vids = ["2fcj8PiiyoY","WLFd6xaRLN0","Bq6IuZIJhuI","Sxks3Z6QByc","KO_3Qgib6RQ","jx96Twg-Aew","vHU6ZRQJ50Q","sEhy-RXkNo0","NacorzSwf0M","LPFgBCUBMYk","HQp8QssTR3Q","IwEgUKMRX5w","8sgycukafqQ","YD8mZmGSDNc","LlU4FuIJT2k"]
     this.onReadyMuter = this.onReadyMuter.bind(this)
     this.changeVid = this.changeVid.bind(this)
-    // this.revealVid = this.revealVid(this)
-    // this.hideVid = this.hideVid(this)
 
   }
+
 
   changeVid(e){
     console.log('I am called')
@@ -110,7 +110,6 @@ class About extends Component{
   }
 
   onReadyMuter(e){
-    // console.log(window.innerWidth)
     e.target.mute()
   }
 

@@ -80,7 +80,7 @@ class Nav extends Component{
           </li>
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="gmail">
             <div className="drop-icon" id="gmail-icon"></div>
-            <a href="mailto:mckenzie.andrea.m@gmail.com?subject=Hey, Dre! Let's make magic." target="_blank">mckenzie.andrea.m@gmail.com</a>
+            <a href="mailto:mckenzie.andrea.m@gmail.com" target="_blank">mckenzie.andrea.m@gmail.com</a>
           </li>
         </ul>
         <p>{/*Come Find Me*/}</p>

@@ -435,6 +435,10 @@ button:hover{
     font-size: 5vw;
   }
 
+  .desc{
+    font-size: 3vw
+  }
+
 button{
   height:5vw;
   width: 8vw;
