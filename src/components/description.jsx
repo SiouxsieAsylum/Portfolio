@@ -9,7 +9,7 @@ class Description extends Component{
     return(
       <div className="description">
         <div className="desc-picture">
-          <p>{this.props.descs[this.props.selected]}</p>
+          <p>{this.props.selected ? this.props.descs[this.props.selected] : "Click a thumbnail to see a description of each project. " }</p>
         </div>
       </div>
       )

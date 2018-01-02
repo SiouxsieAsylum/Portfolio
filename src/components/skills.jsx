@@ -18,7 +18,7 @@ class Skills extends Component {
 
         <div className="skill-button-container">
           <a href={this.props.selected ? this.props.repos[this.props.selected] : "https://github.com/SiouxsieAsylum"} target="_blank"><button className="git-hub-button">Github</button></a>
-          <a href={this.props.selected ? this.props.lives[this.props.selected] : "https://siouxsieasylum.github.io/Andrea-McKenzie-Full-Stack-Developer/"} target="_blank"><button className="live-site-button">Live</button></a>
+          <a href={this.props.selected ? this.props.lives[this.props.selected] : ""} target="_blank"><button className="live-site-button">Live</button></a>
         </div>
       </div>
       )

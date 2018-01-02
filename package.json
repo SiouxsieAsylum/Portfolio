@@ -19,5 +19,5 @@
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://siouxsieasylum.github.io/Portfolio/"
+  "homepage": "http://www.andrea-mckenzie.tech/"
 }
