@@ -47,7 +47,6 @@ class App extends Component {
           <Route exact path="/#contact-me" component={ContactMe} />
           <About />
           <ProjectContainer />
-          <ContactMe />
           <Footer />
         </div>
       </Router>

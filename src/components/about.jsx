@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Youtube from 'react-youtube';
 import '../about.css';
 
 
@@ -85,7 +86,46 @@ const SplitScreen = () => {
 
 
 class About extends Component{
+  constructor(props){
+    super(props)
+
+    this.state = {
+      video: "lnY4dYpDqUg"
+    }
+    this.vids = ["2fcj8PiiyoY","WLFd6xaRLN0","Bq6IuZIJhuI","Sxks3Z6QByc","KO_3Qgib6RQ","jx96Twg-Aew","vHU6ZRQJ50Q","sEhy-RXkNo0","NacorzSwf0M","LPFgBCUBMYk","HQp8QssTR3Q","IwEgUKMRX5w","8sgycukafqQ","YD8mZmGSDNc","LlU4FuIJT2k"]
+    this.onReadyMuter = this.onReadyMuter.bind(this)
+    this.changeVid = this.changeVid.bind(this)
+    // this.revealVid = this.revealVid(this)
+    // this.hideVid = this.hideVid(this)
+
+  }
+
+  changeVid(e){
+    console.log('I am called')
+    let rand = Math.floor(Math.random() * this.vids.length)
+    this.setState({
+      video: this.vids[rand]
+    })
+    console.log(this.state.video)
+  }
+
+  onReadyMuter(e){
+    // console.log(window.innerWidth)
+    e.target.mute()
+  }
+
+
+
   render(){
+    const options = {
+      height: '169',
+      width: '300',
+      playerVars:{
+        autoplay: 1,
+        loop: 1
+      }
+    }
+
     return(
         <div className="container" id="about">
           <div className="flex-on-me">
@@ -93,12 +133,16 @@ class About extends Component{
               <p><span>Hello, my name is Andrea McKenzie.</span> I'm a creative soul with a passion for development. I believe in delivering structured data and an intuitive user interface wrapped up in a beautifully designed package. Want to work together? <a href="mailto:mckenzie.andrea.m@gmail.com">Let's make magic.</a></p>
             </div>
 
+
             <div className="youtube">
-          {/*make a playlist (array of url suffixes)*/}
-          {/*translucent, autoplay on mute. mouseover, sound and opacity, mouseover again, no sound or opacity. */}
-        {/*2fcj8PiiyoY,WLFd6xaRLN0,Bq6IuZIJhuI,Sxks3Z6QByc,KO_3Qgib6RQ,jx96Twg-Aew,vHU6ZRQJ50Q,sEhy-RXkNo0,NacorzSwf0M,LPFgBCUBMYk,HQp8QssTR3Q,IwEgUKMRX5w,8sgycukafqQ,YD8mZmGSDNc,NWWeQlXfSa0 */}
             <h6>Listen With Me</h6>
-            <iframe width="300" height="169" src="https://www.youtube.com/embed/lnY4dYpDqUg" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            <Youtube
+              videoId={this.state.video}
+              opts={options}
+              onReady={this.onReadyMuter}
+              onEnd={this.changeVid}
+              id="youtube-vid"
+            />
             </div>
           </div>
           <SplitScreen />
