@@ -15,11 +15,6 @@ class Nav extends Component{
     this.noHoverExpose = this.noHoverExpose.bind(this)
   }
 
-  // componentDidMount(){
-  //   this.socialList.addEventListener('mouseenter',this.onMouseEnter);
-  //   this.socialList.addEventListener('mouseleave',this.onMouseLeave);
-  // }
-
   hoverExpose = (e) => {
     // this.socialList.className = "hovered"
     this.setState({
@@ -64,7 +59,7 @@ class Nav extends Component{
           <p className={this.state.hidden ? this.state.hidden : ''}>Come Find Me</p>
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="phone">
             <div className="drop-icon" id="phone-icon"></div>
-            <a href="tel:917-674-6154" target="_blank">917 674 6154</a>
+            <a href="tel:917-674-6154" target="_blank"  rel="noopener noreferrer" >917 674 6154</a>
           </li>
 
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="skype">
@@ -72,15 +67,15 @@ class Nav extends Component{
             <a href="" target="_blank">andrea-michelle-mckenzie</a>
           </li>
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="github"><div className="drop-icon" id="git-icon"></div>
-            <a href="https://github.com/SiouxsieAsylum" target="_blank">SiouxsieAsylum</a>
+            <a href="https://github.com/SiouxsieAsylum" target="_blank"  rel="noopener noreferrer" >SiouxsieAsylum</a>
             </li>
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="linkedin">
             <div className="drop-icon" id="linked-icon"></div>
-            <a href="https://www.linkedin.com/in/andrea-mckenzie" target="_blank">in/andrea-mckenzie</a>
+            <a href="https://www.linkedin.com/in/andrea-mckenzie" target="_blank"  rel="noopener noreferrer" >in/andrea-mckenzie</a>
           </li>
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="gmail">
             <div className="drop-icon" id="gmail-icon"></div>
-            <a href="mailto:mckenzie.andrea.m@gmail.com" target="_blank">mckenzie.andrea.m@gmail.com</a>
+            <a href="mailto:mckenzie.andrea.m@gmail.com?subject=Hey, Dre, let's make magic!" target="_blank"  rel="noopener noreferrer" >mckenzie.andrea.m@gmail.com</a>
           </li>
         </ul>
         <p>{/*Come Find Me*/}</p>
