@@ -407,6 +407,7 @@ button:hover{
   #thumbnail{
     position: relative;
     width:100vw;
+    background-color: rgb(124,62,23);
   }
 
   .description,.skill-set{
