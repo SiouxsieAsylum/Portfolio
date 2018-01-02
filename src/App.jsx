@@ -37,6 +37,10 @@ class App extends Component {
     }
   }
 
+  componentDidMount(){
+    document.title="Andrea McKenzie"
+  }
+
   render() {
     return (
       <Router>
