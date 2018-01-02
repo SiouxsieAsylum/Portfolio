@@ -12,7 +12,8 @@ import './reset.css';
 import './App.css';
 
 const Home = (props) => {
-  return(<div id="background">
+  render(){
+    return(<div id="background">
                   <h1 id="landing-words">Let's Make Magic.</h1>
                     <div id="overlay"></div>
                     <div id="landing-bar">
@@ -21,6 +22,8 @@ const Home = (props) => {
                       </Link>
                     </div>
                   </div>)
+  }
+
 }
 
 
@@ -43,6 +46,7 @@ class App extends Component {
           <Route exact path="/#about" component={About} />
           <Route exact path="/#projects" component={ProjectContainer} />
           <Route exact path="/#contact-me" component={ContactMe} />
+          <Home />
           <About />
           <ProjectContainer />
           <Footer />
