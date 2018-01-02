@@ -65,9 +65,10 @@ a{
 #background{
   height:100vh;
   width:100vw;
-  background-image: url(/images/blake-connally-435076-copy.jpeg);
+  background-image: url(./images/blake-connally-435076-copy.jpeg);
   background-size:cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
 }
@@ -104,7 +105,7 @@ footer p{
 #picture{
   height:5vh;
   width:5vh;
-  background-image: url(/images/my-photo-copy.jpeg);
+  background-image: url(./images/my-photo-copy.jpeg);
   background-position: 50% 23%;
   background-size: 350%;
   border-radius: 5vw;
@@ -147,7 +148,7 @@ footer p{
 .drop-icon{
   height:3vw;
   width:3vw;
-  background-image: url(/images/collection-social-light.png);
+  background-image: url(./images/collection-social-light.png);
   background-size:1000%;
   margin-left: 1vw;
 }
@@ -232,32 +233,6 @@ footer p{
  #phone-number, #skype-button{
   display: flex;
   margin-top:1vh;
- }
-
- #Phone{
-  background-image:url(/images/phone.png);
- }
-
- #Skype-icon{
-  background-image:url(/images/skype.png);
-  background-position: 50% 0%;
-  /*background-size: 5%*/
- }
-
- #GitHub{
-  background-image:url(/images/mark-github.png);
- }
-
- #LinkedIn{
-  background-image:url(/images/linkedin.png);
-  background-size: 110%;
-  background-position: 0% 50%;
- }
-
- #Gmail{
-  background-image:url(/images/gmail.png);
-  background-size: 90%;
-  background-position: 0% 50%;
  }
 
 .name-and-contacts{

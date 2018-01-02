@@ -67,29 +67,29 @@
 }
 
 .full-stack{
-  background-image:url(/images/logos/full-stack.png);
+  background-image:url(./images/full-stack.png);
 }
 
 .api{
-  background-image:url(/images/logos/api.png);
+  background-image:url(./images/api.png);
 }
 
 .front-end{
-  background-image:url(/images/logos/html.png);
+  background-image:url(./images/html.png);
 }
 
 .bottom .front-end{
-  background-image:url(/images/logos/white-html.png);
+  background-image:url(./images/white-html.png);
 }
 
 .ux{
-  background-image:url(/images/logos/UX-Icon.png);
+  background-image:url(./images/UX-Icon.png);
   background-size: 100%;
   background-position: 50% 50%;
 }
 
 .react{
-  background-image:url(/images/logos/react.jpg);
+  background-image:url(./images/react.jpg);
 }
 
 .top .icon{
