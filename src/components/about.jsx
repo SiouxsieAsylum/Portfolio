@@ -101,12 +101,10 @@ class About extends Component{
 
 
   changeVid(e){
-    console.log('I am called')
     let rand = Math.floor(Math.random() * this.vids.length)
     this.setState({
       video: this.vids[rand]
     })
-    console.log(this.state.video)
   }
 
   onReadyMuter(e){
@@ -134,7 +132,7 @@ class About extends Component{
 
 
             <div className="youtube">
-            <h6>Listen With Me</h6>
+            <h6 className="listen">Listen With Me</h6>
             <Youtube
               videoId={this.state.video}
               opts={options}

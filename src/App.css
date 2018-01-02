@@ -23,7 +23,7 @@ a{
 }
 
 .nav p{
-  font-size: 2vw;
+  font-size: 1.5vw;
   height:3vh;
   color:white;
   margin-top:1vh;
@@ -45,8 +45,6 @@ a{
   justify-content: center;
   background-color: rgba(255,255,255,0.4);
 }
-
-
 
 #overlay{
   top: 44vh;
@@ -75,7 +73,7 @@ a{
 }
 
 #landing-words{
-  font-size: 10vw;
+  font-size: 7vw;
   position: absolute;
   top: 30vh;
   color:white;
@@ -89,6 +87,9 @@ footer{
   width:100vw;
   display: flex;
   justify-content: center;
+}
+
+footer p{
   font-size: 1.5vh;
 }
 
@@ -190,10 +191,19 @@ footer{
 
 #thumbnail {
   /*height:16vh;*/
+  height: 15vw;
   width: 100vw;
   position: absolute;
   bottom:0;
+  background-color: rgb(124,62,23);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+  #thumbnail:hover{
+    background-color: rgb(150,75,28);
+  }
 
 /*project*/
 .info-image{
@@ -328,7 +338,6 @@ h2{
 
 
 h6{
-  font-size: 3vw;
   margin-left: 2vh;
 }
 
@@ -422,7 +431,6 @@ button:hover{
 
   #thumbnail{
     position: relative;
-    background-color: rgb(124,62,23);
     width:100vw;
   }
 
@@ -466,20 +474,28 @@ button:hover{
     justify-content: space-around;
   }
 
-  #thumbnail:hover{
-    background-color: rgb(150,75,28);
-  }
-
   .image{
       width:calc(200vw/7);
       margin:1vh 0 1vh;
       height:18vw;
   }
 
+  .nav p{
+    font-size: 2vw;
+  }
+
+  #landing-words{
+    font-size: 10vw;
+  }
+
   #enter{
     width:60vw;
     height:10vh;
     font-size: 5vw;
+  }
+
+  .title h6{
+    font-size: 3vw;
   }
 }
 

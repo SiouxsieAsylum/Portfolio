@@ -141,6 +141,10 @@
   font-weight: bold;
 }
 
+.listen{
+  font-size: 3vw;
+}
+
 @media screen and (max-width: 900px){
   .my-intro p, .content p{
     font-size: 2vw;
@@ -150,28 +154,28 @@
   font-size: 2.5vw;
   font-weight: bold;
   }
+
+  .content p{
+    text-align: center;
+  }
+
+  .flex-on-me{
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 4vh;
+  }
+
+  .youtube, .my-intro{
+    align-self: center;
+  }
+
+  .my-intro {
+    width: 80vw;
+    margin-bottom: 4vh;
+    /**/
+  }
+
+  #youtube-vid{
+    /*width:80%;*/
+  }
 }
-
-.content p{
-   text-align: center;
-}
-
-.flex-on-me{
-  flex-direction: column;
-  width: 100vw;
-}
-
-.youtube, .my-intro{
-  align-self: center;
-}
-
-.my-intro {
-  width: 80vw;
-  margin-bottom: 4vh;
-}
-
-#youtube-vid{
-  /*width:80%;*/
-}
-
-
