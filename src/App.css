@@ -399,6 +399,10 @@ button:hover{
     height:75vh;
   }
 
+  #background{
+    background-position: 50% 0%;
+  }
+
   #projects{
     display: flex;
     flex-direction: column;
