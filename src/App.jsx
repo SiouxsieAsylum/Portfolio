@@ -11,8 +11,8 @@ import ProjectContainer from './components/project-container'
 import './reset.css';
 import './App.css';
 
-const Home = (props) => {
-  render(){
+function Home(props){
+  // render(){}
     return(<div id="background">
                   <h1 id="landing-words">Let's Make Magic.</h1>
                     <div id="overlay"></div>
@@ -21,8 +21,9 @@ const Home = (props) => {
                         <button id="enter">Meet Andrea McKenzie</button>
                       </Link>
                     </div>
-                  </div>)
-  }
+                  </div>
+                  )
+
 
 }
 
