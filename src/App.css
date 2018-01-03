@@ -276,7 +276,7 @@ footer p{
 .desc-picture{
   height: 30vh;
   width: 30vw;
-  margin:4vh 5vw 5vh 4vw;
+  margin: 4vh 5vw 5vh 4vw;
   box-shadow: 3vh 3vh 1vh rgba(9,19,25,0.5);
   border-left:6px solid rgb(124,62,23);
   background-color: white;
@@ -386,6 +386,52 @@ button:hover{
   background-color: rgb(124,62,23);
 }
 
+@media screen and (max-height: 500px){
+    .flex-background{
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .desc-picture{
+      margin: 4vh 5vw 5vh 2vw;
+      height:25vw;
+      width:35vw;
+    }
+
+    .desc-picture p{
+      width:30vw;
+      font-size: 2vw;
+    }
+
+    .skill-set, .description{
+      height:30vw;
+      width:40vw;
+    }
+
+    .image{
+      width:calc(100vw/7);
+      height:21vh;
+    }
+
+    #enter{
+      height: 16vh;
+      width: 50vw;
+      font-size: 4vw;
+    }
+
+    #landing-words{
+      top: 20vh;
+    }
+
+  .title h6{
+    font-size: 2vw;
+  }
+
+  #thumbnail{
+    height: 25vh;
+  }
+}
+
 @media screen and (max-width: 900px){
   .App,.flex-background{
     flex-direction: column;
@@ -393,10 +439,6 @@ button:hover{
 
   .flex-background{
     height:100vh;
-  }
-
-  .container{
-    height:75vh;
   }
 
   #background{
@@ -412,6 +454,7 @@ button:hover{
     position: relative;
     width:100vw;
     background-color: rgb(124,62,23);
+    /*height:50vh;*/
   }
 
   .description,.skill-set{
@@ -424,7 +467,7 @@ button:hover{
   }
 
   .desc{
-    font-size: 3vw
+    font-size: 3vw;
   }
 
 button{
@@ -434,10 +477,9 @@ button{
   font-size: 2vw;
 }
 
-button:hover{
-
-  border:2px solid rgb(73, 74, 76);
-}
+  button:hover{
+    border:2px solid rgb(73, 74, 76);
+  }
 
 
   .desc-picture{
@@ -461,7 +503,15 @@ button:hover{
   }
 
   .nav p{
-    font-size: 2vw;
+    font-size: 3vw;
+  }
+
+  .nav a, .like-a{
+    font-size: 2.25vw;
+  }
+
+  .exposed{
+    width: 30vw;
   }
 
   #landing-words{
@@ -478,4 +528,6 @@ button:hover{
     font-size: 3vw;
   }
 }
+
+
 

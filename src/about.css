@@ -1,6 +1,7 @@
 #about{
   background-color:rgb(18,13,25);
   color: rgb(220,220,220);
+  position: relative;
 }
 
 #about a{
@@ -18,7 +19,7 @@
 
 .content-body{
   height:25vw;
-  overflow:hidden;
+  /*overflow:hidden;*/
 }
 
 .layer{
@@ -161,7 +162,6 @@
 
   .flex-on-me{
     flex-direction: column;
-    width: 100vw;
     margin-top: 4vh;
   }
 
@@ -175,7 +175,46 @@
     /**/
   }
 
+
+}
+
+@media screen and (max-height: 500px){
+  .my-intro p, .content p{
+    font-size: 1.75vw;
+  }
+
+  .my-intro span{
+    font-size: 2vw;
+  }
+
+  .split-screen{
+    top: 75vh;
+  }
+
+  .flex-on-me{
+    justify-content: initial;
+  }
+
+  .content-body{
+    height: 25vh;
+    bottom:0;
+  }
+
+  .content{
+    height:22vh;
+  }
+
+  .icon{
+    height: 13vh;
+    width:13vh;
+  }
+
+  .listen{
+    /*font-size: 2vw;*/
+    display: none;
+  }
+
   #youtube-vid{
-    /*width:80%;*/
+    width:80%;
   }
 }

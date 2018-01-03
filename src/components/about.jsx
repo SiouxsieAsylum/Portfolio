@@ -20,7 +20,7 @@ const SplitScreen = () => {
 
                 <div className="content">
                 <div className="icon api"></div>
-                <p>APIs, data structures, and database management</p>
+                <p>APIs and data structures</p>
                 </div>
 
                 <div className="content">
@@ -56,7 +56,7 @@ const SplitScreen = () => {
 
                 <div className="content">
                 <div className="icon api"></div>
-                <p>APIs, data structures, and database management</p>
+                <p>APIs and data structures</p>
                 </div>
 
                 <div className="content">

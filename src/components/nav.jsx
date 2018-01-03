@@ -59,12 +59,12 @@ class Nav extends Component{
           <p className={this.state.hidden ? this.state.hidden : ''}>Come Find Me</p>
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="phone">
             <div className="drop-icon" id="phone-icon"></div>
-            <a href="tel:917-674-6154" target="_blank"  rel="noopener noreferrer" >917 674 6154</a>
+            <a>917 674 6154</a>
           </li>
 
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="skype">
             <div className="drop-icon" id="skype-icon"></div>
-            <a href="" target="_blank">andrea-michelle-mckenzie</a>
+            <a>andrea-michelle-mckenzie</a>
           </li>
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="github"><div className="drop-icon" id="git-icon"></div>
             <a href="https://github.com/SiouxsieAsylum" target="_blank"  rel="noopener noreferrer" >SiouxsieAsylum</a>
