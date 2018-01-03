@@ -163,19 +163,36 @@
   .flex-on-me{
     flex-direction: column;
     margin-top: 4vh;
+    height:60vh;
   }
 
   .youtube, .my-intro{
     align-self: center;
   }
 
-  .my-intro {
-    width: 80vw;
-    margin-bottom: 4vh;
-    /**/
+  .youtube{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #youtube-vid video{
+    align-self: center;
   }
 
 
+  .my-intro {
+    width: 80vw;
+    margin-bottom: 4vh;
+  }
+
+  #youtube-vid{
+    width:80%;
+  }
+
+  .split-screen{
+    top: 65vh;
+  }
 }
 
 @media screen and (max-height: 500px){
@@ -186,10 +203,10 @@
   .my-intro span{
     font-size: 2vw;
   }
-
   .split-screen{
     top: 75vh;
   }
+
 
   .flex-on-me{
     justify-content: initial;
@@ -197,7 +214,7 @@
 
   .content-body{
     height: 25vh;
-    bottom:0;
+    /*bottom:0;*/
   }
 
   .content{

@@ -386,52 +386,6 @@ button:hover{
   background-color: rgb(124,62,23);
 }
 
-@media screen and (max-height: 500px){
-    .flex-background{
-      flex-direction: row;
-      justify-content: space-around;
-    }
-
-    .desc-picture{
-      margin: 4vh 5vw 5vh 2vw;
-      height:25vw;
-      width:35vw;
-    }
-
-    .desc-picture p{
-      width:30vw;
-      font-size: 2vw;
-    }
-
-    .skill-set, .description{
-      height:30vw;
-      width:40vw;
-    }
-
-    .image{
-      width:calc(100vw/7);
-      height:21vh;
-    }
-
-    #enter{
-      height: 16vh;
-      width: 50vw;
-      font-size: 4vw;
-    }
-
-    #landing-words{
-      top: 20vh;
-    }
-
-  .title h6{
-    font-size: 2vw;
-  }
-
-  #thumbnail{
-    height: 25vh;
-  }
-}
-
 @media screen and (max-width: 900px){
   .App,.flex-background{
     flex-direction: column;
@@ -528,6 +482,54 @@ button{
     font-size: 3vw;
   }
 }
+
+@media screen and (max-height: 500px){
+    .flex-background{
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .desc-picture{
+      margin: 4vh 5vw 5vh 2vw;
+      height:25vw;
+      width:35vw;
+    }
+
+    .desc-picture p{
+      width:30vw;
+      font-size: 2vw;
+    }
+
+    .skill-set, .description{
+      height:30vw;
+      width:40vw;
+    }
+
+    .image{
+      width:calc(100vw/7);
+      height:21vh;
+    }
+
+    #enter{
+      height: 16vh;
+      width: 50vw;
+      font-size: 4vw;
+    }
+
+    #landing-words{
+      top: 20vh;
+    }
+
+  .title h6{
+    font-size: 2vw;
+  }
+
+  #thumbnail{
+    height: 25vh;
+  }
+}
+
+
 
 
 
