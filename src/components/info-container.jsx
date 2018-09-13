@@ -8,7 +8,6 @@ class InfoContainer extends Component {
     <div className="info-image">
       <div className="container" id="info">
           <div className="flex-background">
-        {/*do something with description and contact-me page*/}
             <Skills
              selected={this.props.selected}
              titles={this.props.titles}

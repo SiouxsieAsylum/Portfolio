@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
 
+
 import Nav from './components/nav'
 import About from './components/about'
 import Footer from './components/footer'
@@ -12,7 +13,6 @@ import './reset.css';
 import './App.css';
 
 function Home(props){
-  // render(){}
     return(<div id="background">
                   <h1 id="landing-words">Let's Make Magic.</h1>
                     <div id="overlay"></div>

@@ -45,16 +45,11 @@ class Nav extends Component{
         <Link to="#about">
           <p>Get To Know Me</p>
         </Link>
-        {/*<Link to="#contact-me">*/}
-
-        {/*</Link>*/}
-        {/*<div id="">*/}
         <ul
           className={this.state.hovered? ['social-media',this.state.hovered].join(' ') : 'social-media' }
           ref={socialList => this.socialList = socialList}
 
-          onMouseEnter={e => this.hoverExpose(e)}
-          onMouseLeave={e => this.noHoverExpose(e)}>
+          onClick={e => this.hoverExpose(e)}>
           <div className={this.state.hidden ? this.state.hidden : ''} id="picture"></div>
           <p className={this.state.hidden ? this.state.hidden : ''}>Come Find Me</p>
           <li className={this.state.exposed ? 'list exposed' : 'list'} id="phone">

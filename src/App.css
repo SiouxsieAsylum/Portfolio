@@ -386,6 +386,15 @@ button:hover{
   background-color: rgb(124,62,23);
 }
 
+.link-button-enter {
+  opacity: 0.01;
+}
+
+.link-button-enter.link-button-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
 @media screen and (max-width: 900px){
   .App,.flex-background{
     flex-direction: column;

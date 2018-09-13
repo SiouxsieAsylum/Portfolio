@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class Skills extends Component {
   constructor(props){
@@ -17,8 +18,22 @@ class Skills extends Component {
       </div>
 
         <div className="skill-button-container">
-          <a href={this.props.selected ? this.props.repos[this.props.selected] : "https://github.com/SiouxsieAsylum"} target="_blank"><button className="git-hub-button">Github</button></a>
-          <a href={this.props.selected ? this.props.lives[this.props.selected] : ""} target="_blank"><button className="live-site-button">Live</button></a>
+        <ReactCSSTransitionGroup
+          transitionName="github-button"
+          transitionEnterTimeout={500}
+        >
+          <a key="github_button" href={this.props.selected ? this.props.repos[this.props.selected] : "https://github.com/SiouxsieAsylum"} target="_blank"><button className="git-hub-button">Github</button></a>
+         </ReactCSSTransitionGroup>
+
+        <ReactCSSTransitionGroup
+          transitionName="link-button"
+          transitionEnterTimeout={500}
+        >
+          { this.props.selected && 
+            <a key="link_button" href={this.props.lives[this.props.selected]} target="_blank"><button className="live-site-button">Live</button></a>
+
+          }
+         </ReactCSSTransitionGroup>
         </div>
       </div>
       )
@@ -27,4 +42,3 @@ class Skills extends Component {
 }
 
 export default Skills;
-//description will appear in the
