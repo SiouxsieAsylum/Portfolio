@@ -16,7 +16,6 @@ class Nav extends Component{
   }
 
   hoverExpose = (e) => {
-    // this.socialList.className = "hovered"
     this.setState({
       hovered:'hovered',
       exposed:'exposed',
@@ -73,8 +72,7 @@ class Nav extends Component{
             <a href="mailto:mckenzie.andrea.m@gmail.com?subject=Hey, Dre, let's make magic!" target="_blank"  rel="noopener noreferrer" >mckenzie.andrea.m@gmail.com</a>
           </li>
         </ul>
-        <p>{/*Come Find Me*/}</p>
-        {/*</div>*/}
+        <p></p>
         </div>
 
       )
