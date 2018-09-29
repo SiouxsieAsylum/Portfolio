@@ -8,7 +8,6 @@ import Invoice from '../images/invoicer-screenshot.png'
 import DT from '../images/landing-page.png'
 import Wine from '../images/wine-thumbnail.png'
 import Shoppr from '../images/shopping-list.png'
-// import logo from './logo.svg';
 
 
 
@@ -18,9 +17,7 @@ class ProjectContainer extends Component {
     this.state={
       selected: null
     }
-    // if selected = number, populate description, live, and github links with that numbers prop info
-    // on hover, get index and set background to that image
-    // if selected = null, description is my bio, live link is linkedin and github link is my github
+
     this.titles = ["","Steven's Calculator","Bellydancing By Layla","Dissonance","DateTime","Reci-Pea 2.0","Wine By Dre","Invoicer"]
     this.projectImages = ["",Calc,Dance,Diss,DT,Shoppr,Wine,Invoice];
     this.technologies = ["","HTML,\nCSS,\nJS","HTML,\nCSS,\nJS","HTML,\nCSS,\nJS","Node.js,\nExpress.js,\nPostGresSQl,\nPassport(auth)","Node.js,\nExpress.js,\nPostGresSQl,\nPassport(auth),\nReact,\nGroup Git\n","React","\nNode.js,\nExpress.js,\nPostGresSQl,\nOauth2,\nNodemailer"];

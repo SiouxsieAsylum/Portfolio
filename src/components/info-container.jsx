@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Skills from './skills';
 import Description from './description';
 
+
 class InfoContainer extends Component {
   render(){
     return(

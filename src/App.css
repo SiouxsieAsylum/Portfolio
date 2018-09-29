@@ -118,7 +118,6 @@ footer p{
 /*/////////////nav////////////*/
 
 .hovered{
-  /*width:25vw;*/
   display: block;
   transition:1s;
 }
@@ -208,7 +207,6 @@ footer p{
 
 /*project*/
 .info-image{
-  /*background-image: url(/images/my-photo-copy.jpeg);*/
   background-size: 100%;
   background-position: 0% 30%;
 }
@@ -385,6 +383,29 @@ button:hover{
 #contact-me{
   background-color: rgb(124,62,23);
 }
+.description-enter {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.description-enter .description-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: transform 500ms ease-in opacity 500ms ease-in;
+}
+
+.description-leave {
+  opacity: 1;
+  transform: translateY(0px);
+
+}
+
+.description-leave .description-leave-active{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 300ms ease-in opacity 300ms ease-in;
+
+}
 
 .link-button-enter {
   opacity: 0.01;
@@ -394,6 +415,9 @@ button:hover{
   opacity: 1;
   transition: opacity 500ms ease-in;
 }
+
+
+
 
 @media screen and (max-width: 900px){
   .App,.flex-background{

@@ -7,7 +7,7 @@ class Nav extends Component{
     super(props)
 
     this.state={
-      hovered:'',
+      clicked:'',
       exposed:'',
       hidden:''
     }

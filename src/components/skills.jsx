@@ -13,8 +13,14 @@ class Skills extends Component {
       <div className="skill-set">
       <div>
         <h2>{this.props.selected ? this.props.titles[this.props.selected] : "Nice to E-Meet you!"}</h2>
-        <p className="desc">{this.props.selected ? "" : this.defaultDescription}</p>
-        <p className="tech">{this.props.selected ? this.props.techs[this.props.selected] : ""}</p>
+        <ReactCSSTransitionGroup
+          transitionName="description"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+        
+          <p key="desc" className="desc">{this.props.selected ? "" : this.defaultDescription}</p>
+          <p key="tech" className="tech">{this.props.selected ? this.props.techs[this.props.selected] : ""}</p>
+        </ReactCSSTransitionGroup>
       </div>
 
         <div className="skill-button-container">
